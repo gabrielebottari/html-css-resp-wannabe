@@ -131,17 +131,13 @@ img {
 /* BONUS */
 @media screen and (max-width: 1160px) {
     body > * {
-        width: 1160px;
+        max-width: 1160px;
     }
     
     .site-header {
-        margin: 0 auto;
-        width: 100%;
+        margin-top: 3rem;
     }
 
-    .steps {
-        width: 1160px;
-    }
 
 }
 
@@ -151,9 +147,12 @@ img {
         max-width: 768px;
     }
 
-    .site-header {
-        margin: 0 auto;
+    .container {
         width: 100%;
+    }
+
+    .site-header {
+        margin-top: 3rem;
     }
 }
  
@@ -163,22 +162,32 @@ img {
         max-width: 480px;
     }
 
+    .steps, .lessons, .why-us {
+        margin: 0;
+        padding: 3em 0;
+    }
+
     .site-header {
         width: 480px;
     }
 
     .container {
-        padding: 20px;
+        width: 100%;
     }
 
     .site-header {
         width: 100%;
+        margin-top: 3rem;
     }
 
     .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .lessons .col:first-child {
+        margin-bottom: 3rem;
     }
 
     .lessons .col {
@@ -202,31 +211,35 @@ img {
         width: 100%;
     }
 
+    .why-us .row {
+        justify-content: center;
+    }
+
     .col-left {
         text-align: center;
     }
 
-    .why-us .container {
-        background-color: black;
+    .why-us {
+        background-color: #222222;
     }
 
     h1 {
-        font-size: 6rem;
-        margin-bottom: 2rem;
-    }
-
-    h2 {
         font-size: 5rem;
         margin-bottom: 2rem;
     }
 
-    h3 {
+    h2 {
         font-size: 4rem;
         margin-bottom: 2rem;
     }
 
-    p {
+    h3 {
         font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
 
@@ -235,16 +248,20 @@ img {
     }
 
     .lessons .col img {
-        height: 500px;
+        height: 250px;
     }
 
 
     .steps .col img {
-        height: 500px;
+        height: 250px;
     }
 
     .col.col-right {
         margin-left: 20px;
+    }
+
+    .steps .col:not(.steps .col:last-child) {
+        margin-bottom: 3rem;
     }
 
 }
