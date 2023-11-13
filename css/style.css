@@ -132,12 +132,16 @@ img {
 @media screen and (max-width: 1160px) {
     body > * {
         max-width: 1160px;
+        overflow-x: hidden;
     }
     
     .site-header {
         margin-top: 3rem;
     }
 
+    .container {
+        width: 100%;
+    }
 
 }
 
@@ -150,12 +154,8 @@ img {
     .container {
         width: 100%;
     }
-
-    .site-header {
-        margin-top: 3rem;
-    }
 }
- 
+
 /* MOBILE */
 @media screen and (max-width: 480px) {
     body > * {
@@ -165,10 +165,6 @@ img {
     .steps, .lessons, .why-us {
         margin: 0;
         padding: 3em 0;
-    }
-
-    .site-header {
-        width: 480px;
     }
 
     .container {
@@ -190,25 +186,17 @@ img {
         margin-bottom: 3rem;
     }
 
-    .lessons .col {
+    .lessons .col, 
+    .steps .col, 
+    .step .text-center,
+    .why-us .col,
+    .card   {
         width: 100%;
     }
 
     .steps {
         margin: 0 auto;
         padding: 0;
-    }
-
-    .steps .col {
-        width: 100%;
-    }
-
-    .step .text-center {
-        width: 100%;
-    }
-
-    .why-us .col {
-        width: 100%;
     }
 
     .why-us .row {
@@ -241,10 +229,6 @@ img {
     p {
         font-size: 2rem;
         margin-bottom: 2rem;
-    }
-
-    .card {
-        width: 100%;
     }
 
     .lessons .col img {
